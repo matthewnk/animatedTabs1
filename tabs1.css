@@ -1,0 +1,108 @@
+/*colors
+grey blue: #9facab
+dark blue: #37b0c9;
+hot yellow: 247, 255, 4, 0.85; #f7ff04;
+orange: #f26522
+green: #669933
+dark brown: #362f2d
+light blue: #badce6;
+
+*/
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+  margin: 0px;
+  background-color: #9facab;
+}
+
+h1 {
+  position: absolute;
+  top: -30px;
+  float: left;
+  z-index: -19;
+  padding-left: 10px;
+  padding-top: 0px;
+  font-size: 4em;
+  color: rgba(247, 255, 4, 0.85);
+}
+
+h2 {
+  margin-top: 0px;
+  padding: 20px 0px 0px 20px;
+  font-size: 1.7em;
+  margin-top: 0px;
+}
+
+.article {
+  position: absolute;
+  background-color: #37b0c9;
+  padding: 20px;
+  /*margin-top: 50px;*/
+  min-width: 800px;
+  max-width: 70%;
+  color: White;
+  display: none;
+}
+
+.article.active {
+  display: block;
+}
+
+.content {
+  position: absolute;
+  z-index: 21;
+  top: 100px;
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  opacity: 0.85;
+  box-shadow: 0px 0px 15px rgba(15, 47, 53, 0.3);
+}
+
+.topNav {
+  position: relative;
+  z-index: 20;
+  top: 50px; 
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.topNav ul{
+  list-style: none;
+  height: 400px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15%;
+}
+
+.topNav li {
+  position: relative;
+  top: -15px;
+  float: left;
+  display: block;
+  padding: 6px 16px;
+  opacity: .85;
+  margin: 1px;
+  height: 100%;
+  min-width: 6em;
+  background-color: #badce6;
+  background: linear-gradient(#badce6, #9facab);
+  box-shadow: 7px -7px 0px #37b0c9;
+  text-align: center;  
+  font-size: 17px;  
+}
+
+.topNav li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+}
+
+li.active {
+  background-color: red;
+}
+
+

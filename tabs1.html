@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navigation Tabs!</title>
+    <link rel="stylesheet" href="tabs1.css">
+    <script src="jquery-3.2.0.js"></script>
+    <script src="tabs1.js"></script>
+  </head>
+  <body>
+    <h1>Fancy Tabs!</h1>
+    <div class="topNav">   
+      <ul class="tabs1">
+        <li id="tab1"><a href="#tab1">Tab Animation</a></li>
+        <li id="tab2"><a href="#tab2">Panel Reveal</a></li>
+        <li id="tab3"><a href="#tab3">Click</a></li>
+        <li id="tab4"><a href="#tab4">Problems</a></li>
+        <li id="tab5"><a href="#tab5">Also...</a></li>
+      </ul> 
+    </div>
+    <div class="content">
+      <div class="contentHeader"></div>
+      <div class="article" id="article1">
+        <article>
+          <h3>Tab Animation</h3>
+          <p>Each tab is animated using the jquery method "animate". They are animated by changing the top and opacity values via the function "tabAnimation1()".</p>
+        </article>
+      </div>
+      <div class="article" id="article2">
+        <article>
+          <h3>Panel Reveal</h3>
+          <p>Each tab is linked to an article panel. The panels are hidden using the css property display set to a value of none. The function "linkTabAndArticle()" causes a the class "active" to be added to the article div with the corresponding id, causing it to become visible.</p>
+        </article>
+      </div>
+      <div class="article" id="article3">
+        <article>
+          <h3>Click</h3>
+          <p>The tabs are also clickable. Currently, the function getHref() gathers the value of href and logs it to the console.</p>
+        </article>
+      </div>
+      <div class="article" id="article4">
+        <article>
+          <h3>Problems</h3>
+          <p>This program is far from ideal. The biggest problem is with the function "linkTabAndArticle()". I'm sure you would agree, this is one big ugly function. It's about as un-DRY as you can get. Ideally there should be a separate function to get the id values; then a function to link those values to the corresponding article panel, and a separate function to cause the panel to be revealed.</p>
+      </div>
+      <div class="article" id="article5">
+        <article>
+          <h3>Also...</h3>
+          <p>There are lots of little problems. I'm not to happy with the animation of the tabs. Sometimes they bouncy up and down if you mouse over them in just the wrong way. Also, I'd like to make the panels fade in rather than just appear abruptly.</p>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
